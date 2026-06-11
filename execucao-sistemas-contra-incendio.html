@@ -3,22 +3,177 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#030b14">
-  <title>Execução de Sistemas Contra Incêndio | Grupo Planejar</title>
-  <link rel="stylesheet" href="./styles.css?v=20260611-red">
+  <meta name="description" content="Execução de sistemas de prevenção e combate a incêndio com equipe especializada, materiais certificados e atuação nacional.">
+  <meta name="theme-color" content="#02070d">
+  <title>Execução de Sistemas Contra Incêndio | Planejar Obras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=20260611-obras">
 </head>
-<body>
-  <main class="service-placeholder">
-    <div class="container">
-      <a class="brand" href="./index.html"><span>GRUPO</span><strong>PLANEJAR</strong></a>
-      <p class="overline">Soluções de engenharia</p>
-      <h1>Execução de Sistemas Contra Incêndio</h1>
-      <p>Página completa prevista para a próxima sprint. Nossa equipe já está disponível para analisar sua necessidade.</p>
-      <div class="hero-actions">
-        <a class="button button-green" href="https://wa.me/553730161235?text=Olá,%20gostaria%20de%20falar%20sobre%20execução%20de%20sistemas%20contra%20incêndio." target="_blank" rel="noopener">Solicitar orçamento</a>
-        <a class="button button-outline" href="./index.html">Voltar para a Home</a>
+<body class="systems-page">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header systems-header">
+    <div class="container header-inner">
+      <a class="works-brand" href="./index.html" aria-label="Planejar Obras de Prevenção a Incêndios">
+        <img src="./assets/img/execucao-incendio/logo-planejar-obras.png" alt="Planejar Obras de Prevenção a Incêndios">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a class="nav-link" href="./index.html">Início</a>
+        <a class="nav-link" href="./index.html#quem-somos">Sobre Nós</a>
+        <div class="nav-dropdown">
+          <button class="nav-link dropdown-toggle active" type="button" aria-expanded="false">
+            Serviços
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5"/></svg>
+          </button>
+          <div class="dropdown-menu">
+            <a href="./projetos-prevencao-combate-incendio.html">Projetos de prevenção e combate a incêndio</a>
+            <a href="./execucao-sistemas-contra-incendio.html">Execução de sistemas contra incêndio</a>
+            <a href="./construcao-civil.html">Construção civil</a>
+          </div>
+        </div>
+        <a class="nav-link" href="#obras">Obras</a>
+        <a class="nav-link" href="./index.html#obras-clientes">Clientes</a>
+        <a class="nav-link" href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-contact systems-header-contact">
+        <a class="phone" href="https://wa.me/553730161235?text=Olá,%20vim%20pelo%20site%20do%20Grupo%20Planejar%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20execução%20de%20sistemas%20contra%20incêndio." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.7A8.5 8.5 0 1 1 20.5 11.8Z"/><path d="M8.2 7.7c.3-.5.5-.5.9-.5.3 0 .5 0 .7.5l.8 1.9c.1.3.1.5-.2.8l-.6.7c-.2.2-.2.4-.1.7.5 1 1.4 1.9 2.4 2.4.3.2.5.1.7-.1l.9-1c.2-.2.4-.3.7-.2l1.9.9c.3.1.4.3.4.6 0 .5-.3 1.4-.8 1.9-.6.5-1.4.7-2.3.5-1.4-.3-3.2-1.2-4.8-2.9-1.3-1.3-2.2-3.1-2.4-4.4-.1-.8.1-1.4.5-1.8.4-.4.8-.6 1.3-.6Z"/></svg>
+          <span>(37) 3016-1235</span>
+        </a>
+        <a class="button button-outline works-header-cta" href="https://wa.me/553730161235?text=Olá,%20vim%20pelo%20site%20do%20Grupo%20Planejar%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20execução%20de%20sistemas%20contra%20incêndio." target="_blank" rel="noopener">Solicite um orçamento</a>
       </div>
     </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="systems-hero" aria-labelledby="systems-title">
+      <div class="systems-hero-bg"></div>
+      <div class="systems-hero-overlay"></div>
+      <div class="container systems-hero-inner">
+        <div class="systems-hero-copy">
+          <p class="overline">Soluções de engenharia</p>
+          <h1 id="systems-title">Execução de sistemas<br>contra <span>incêndio</span></h1>
+          <p>Executamos obras completas de prevenção e combate a incêndio, com equipe especializada, materiais certificados e conformidade com as normas vigentes.</p>
+          <ul class="systems-benefits">
+            <li><span>✓</span>Projetos e execução com segurança</li>
+            <li><span>✓</span>Equipe especializada</li>
+            <li><span>✓</span>Materiais certificados</li>
+            <li><span>✓</span>Conformidade com as normas</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="button button-red" href="https://wa.me/553730161235?text=Olá,%20vim%20pelo%20site%20do%20Grupo%20Planejar%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20execução%20de%20sistemas%20contra%20incêndio." target="_blank" rel="noopener">Solicitar orçamento</a>
+            <a class="button button-outline" href="https://wa.me/553730161235?text=Olá,%20vim%20pelo%20site%20do%20Grupo%20Planejar%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20execução%20de%20sistemas%20contra%20incêndio." target="_blank" rel="noopener">Falar com especialista</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works-section" id="obras" aria-labelledby="works-title">
+      <div class="container">
+        <div class="systems-heading">
+          <p class="overline">Projetos em campo</p>
+          <h2 id="works-title">Algumas de nossas obras</h2>
+          <i></i>
+        </div>
+
+        <div class="video-grid">
+          <a class="video-card" href="https://www.youtube.com/shorts/AiegypsMelI" target="_blank" rel="noopener">
+            <img src="./assets/img/execucao-incendio/video-obra-femsa.png" alt="Obra FEMSA em Divinópolis">
+            <span class="video-shade"></span><span class="play-button" aria-hidden="true"></span>
+            <span class="video-info"><strong>Obra FEMSA</strong><small>Divinópolis/MG</small></span>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/shorts/FLPIEO0M-h8" target="_blank" rel="noopener">
+            <img src="./assets/img/execucao-incendio/video-deposito-bebidas.png" alt="Obra Depósito de Bebidas em Belo Horizonte">
+            <span class="video-shade"></span><span class="play-button" aria-hidden="true"></span>
+            <span class="video-info"><strong>Obra Depósito de Bebidas</strong><small>Belo Horizonte/MG</small></span>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/shorts/BH-Cj2Ltbsk" target="_blank" rel="noopener">
+            <img src="./assets/img/execucao-incendio/video-galpao-logistico.png" alt="Obra Galpão Logístico em Itaporã">
+            <span class="video-shade"></span><span class="play-button" aria-hidden="true"></span>
+            <span class="video-info"><strong>Obra Galpão Logístico</strong><small>Itaporã/MS</small></span>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/watch?si=rATDNbDVnoEZI6Ry&amp;v=8TpO_gCkQfM&amp;feature=youtu.be" target="_blank" rel="noopener">
+            <img src="./assets/img/execucao-incendio/video-documentario-planejar.png" alt="Documentário Obra Grupo Planejar">
+            <span class="video-shade"></span><span class="play-button" aria-hidden="true"></span>
+            <span class="video-info"><strong>Documentário Obra Grupo Planejar</strong><small>Institucional</small></span>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/shorts/aOUTLr9orBA" target="_blank" rel="noopener">
+            <img src="./assets/img/execucao-incendio/video-sao-joao-del-rei.png" alt="Obra São João del Rei">
+            <span class="video-shade"></span><span class="play-button" aria-hidden="true"></span>
+            <span class="video-info"><strong>Obra São João del Rei</strong><small>Indústria de Móveis</small></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="systems-heading">
+          <p class="overline">Execução e qualidade</p>
+          <h2 id="gallery-title">Fotos de obras</h2>
+          <i></i>
+        </div>
+        <div class="works-gallery">
+          <button class="gallery-item" type="button" data-lightbox="./assets/img/execucao-incendio/foto-obra-01.jpg" aria-label="Ampliar foto de obra 1"><img src="./assets/img/execucao-incendio/foto-obra-01.jpg" alt="Técnico Planejar em instalação industrial"></button>
+          <button class="gallery-item" type="button" data-lightbox="./assets/img/execucao-incendio/foto-obra-02.jpg" aria-label="Ampliar foto de obra 2"><img src="./assets/img/execucao-incendio/foto-obra-02.jpg" alt="Montagem industrial com guindaste"></button>
+          <button class="gallery-item" type="button" data-lightbox="./assets/img/execucao-incendio/foto-obra-03.jpg" aria-label="Ampliar foto de obra 3"><img src="./assets/img/execucao-incendio/foto-obra-03.jpg" alt="Equipe técnica em centro de distribuição"></button>
+          <button class="gallery-item" type="button" data-lightbox="./assets/img/execucao-incendio/foto-obra-04.jpg" aria-label="Ampliar foto de obra 4"><img src="./assets/img/execucao-incendio/foto-obra-04.jpg" alt="Equipe acompanhando obra de galpão logístico"></button>
+          <button class="gallery-item" type="button" data-lightbox="./assets/img/execucao-incendio/foto-obra-05.jpg" aria-label="Ampliar foto de obra 5"><img src="./assets/img/execucao-incendio/foto-obra-05.jpg" alt="Rede de hidrantes instalada em indústria"></button>
+          <button class="gallery-item" type="button" data-lightbox="./assets/img/execucao-incendio/foto-obra-06.jpg" aria-label="Ampliar foto de obra 6"><img src="./assets/img/execucao-incendio/foto-obra-06.jpg" alt="Equipe Planejar em obra industrial"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="systems-metrics metrics" aria-label="Indicadores da Planejar Obras">
+      <div class="container metric-grid">
+        <article class="metric">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 5c7 6 15 8 24 10v15c0 14-9 23-24 29C17 53 8 44 8 30V15c9-2 17-4 24-10Z"/></svg>
+          <div><strong>+15</strong><span>Anos de experiência</span></div>
+        </article>
+        <article class="metric">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 57h44M16 57V20h15v37M31 57V8h20v49M21 28h5m-5 9h5m-5 9h5m11-29h8m-8 10h8m-8 10h8m-8 10h8"/></svg>
+          <div><strong>+1.000</strong><span>Projetos executados</span></div>
+        </article>
+        <article class="metric">
+          <svg class="brazil-map" viewBox="0 0 100 100" aria-hidden="true"><path d="M22 7 34 10 41 5 49 12 58 9 64 16 75 17 81 23 92 27 97 36 92 43 94 51 88 57 85 66 78 70 74 79 67 83 62 95 55 88 53 78 46 72 42 63 33 58 30 49 21 45 18 37 7 31 12 21 18 19Z"/></svg>
+          <div><span>Atuação</span><strong class="metric-word">Nacional</strong></div>
+        </article>
+        <article class="metric">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="21" r="8"/><circle cx="43" cy="21" r="8"/><path d="M7 55c1-13 6-20 15-20s14 7 15 20M28 55c1-13 6-20 15-20s14 7 15 20"/></svg>
+          <div><span>Equipe</span><strong class="metric-word">Especializada</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="systems-cta" id="contato">
+      <div class="container">
+        <div>
+          <p class="overline">Atendimento técnico</p>
+          <h2>Precisa executar ou adequar seu sistema contra incêndio?</h2>
+          <p>Fale com nossa equipe técnica e solicite uma análise para sua obra.</p>
+        </div>
+        <a class="button button-red" href="https://wa.me/553730161235?text=Olá,%20vim%20pelo%20site%20do%20Grupo%20Planejar%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20execução%20de%20sistemas%20contra%20incêndio." target="_blank" rel="noopener">Solicitar orçamento pelo WhatsApp</a>
+      </div>
+    </section>
   </main>
+
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Visualização ampliada da obra" hidden>
+    <button class="lightbox-close" type="button" aria-label="Fechar imagem">×</button>
+    <img alt="Foto ampliada de obra">
+  </div>
+
+  <a class="floating-whatsapp" href="https://wa.me/553730161235?text=Olá,%20vim%20pelo%20site%20do%20Grupo%20Planejar%20e%20gostaria%20de%20solicitar%20um%20orçamento%20para%20execução%20de%20sistemas%20contra%20incêndio." target="_blank" rel="noopener" aria-label="Solicitar orçamento pelo WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.7A8.5 8.5 0 1 1 20.5 11.8Z"/><path d="M8.2 7.7c.3-.5.5-.5.9-.5.3 0 .5 0 .7.5l.8 1.9c.1.3.1.5-.2.8l-.6.7c-.2.2-.2.4-.1.7.5 1 1.4 1.9 2.4 2.4.3.2.5.1.7-.1l.9-1c.2-.2.4-.3.7-.2l1.9.9c.3.1.4.3.4.6 0 .5-.3 1.4-.8 1.9-.6.5-1.4.7-2.3.5-1.4-.3-3.2-1.2-4.8-2.9-1.3-1.3-2.2-3.1-2.4-4.4-.1-.8.1-1.4.5-1.8.4-.4.8-.6 1.3-.6Z"/></svg>
+  </a>
+
+  <script src="./script.js?v=20260611-obras"></script>
 </body>
 </html>

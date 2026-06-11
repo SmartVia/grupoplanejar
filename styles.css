@@ -16,6 +16,7 @@
 html { overflow-x: hidden; scroll-behavior: smooth; scroll-padding-top: 96px; }
 body { margin: 0; padding-top: 102px; overflow-x: hidden; color: var(--white); background: var(--black); font-family: "Inter", sans-serif; }
 body.menu-open { overflow: hidden; }
+body.lightbox-open { overflow: hidden; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 img { display: block; max-width: 100%; }
@@ -180,6 +181,66 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
 .service-placeholder h1 { max-width: 780px; margin: 0 0 22px; font-family: "Montserrat", sans-serif; font-size: clamp(36px, 6vw, 68px); line-height: 1.04; text-transform: uppercase; }
 .service-placeholder p:not(.overline) { max-width: 650px; margin: 0 0 30px; color: var(--muted); line-height: 1.7; }
 
+/* Execução de sistemas contra incêndio */
+.systems-page { background: #010407; }
+.systems-page .site-header { background: rgba(0,0,0,.96); }
+.systems-page .site-header.scrolled { background: rgba(0,0,0,.99); }
+.works-brand { flex: 0 0 235px; height: 66px; display: flex; align-items: center; }
+.works-brand img { width: 225px; height: auto; max-height: 58px; object-fit: contain; object-position: left center; }
+.systems-header .main-nav { gap: 34px; }
+.systems-header-contact { margin-left: 8px; }
+.works-header-cta { min-height: 46px; padding-inline: 22px; color: var(--red); border-color: rgba(226,26,35,.75); }
+.systems-hero { position: relative; min-height: 600px; background: #020408; overflow: hidden; }
+.systems-hero-bg { position: absolute; inset: -4% 0; background: url("./assets/img/execucao-incendio/hero-execucao-incendio.png") center/cover no-repeat; transform: translate3d(0, var(--systems-parallax, 0), 0) scale(1.035); will-change: transform; }
+.systems-hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.99) 0%, rgba(0,0,0,.91) 25%, rgba(0,0,0,.52) 47%, rgba(0,0,0,.08) 76%), linear-gradient(0deg, rgba(0,0,0,.72), transparent 48%); }
+.systems-hero-inner { position: relative; min-height: 600px; display: flex; align-items: center; }
+.systems-hero-copy { width: min(590px, 49%); padding: 52px 0; }
+.systems-hero-copy h1 { margin: 0; font-family: "Montserrat", sans-serif; font-size: clamp(42px, 4vw, 61px); line-height: 1.02; text-transform: uppercase; letter-spacing: -.025em; }
+.systems-hero-copy h1 span { color: var(--red); }
+.systems-hero-copy > p:not(.overline) { max-width: 565px; margin: 22px 0; color: #d1d4d8; font-size: 15px; line-height: 1.7; }
+.systems-benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 13px 28px; margin: 0 0 30px; padding: 0; list-style: none; color: #edf0f2; font-size: 13px; }
+.systems-benefits li { display: flex; align-items: center; gap: 10px; }
+.systems-benefits span { width: 21px; height: 21px; display: grid; place-items: center; color: var(--red); border: 1px solid var(--red); border-radius: 50%; font-size: 11px; }
+.works-section, .gallery-section { padding: 62px 0; background: radial-gradient(circle at 50% 0, #10171e 0, #03070b 50%, #010305 100%); }
+.gallery-section { padding-top: 8px; }
+.systems-heading { margin-bottom: 30px; text-align: center; }
+.systems-heading .overline { margin-bottom: 8px; }
+.systems-heading h2 { margin: 0; font-family: "Montserrat", sans-serif; font-size: clamp(27px, 3vw, 40px); text-transform: uppercase; letter-spacing: .06em; }
+.systems-heading i { display: block; width: 42px; height: 2px; margin: 13px auto 0; background: var(--red); }
+.video-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; }
+.video-card { position: relative; grid-column: span 2; min-height: 255px; border: 1px solid rgba(255,255,255,.16); border-radius: 9px; overflow: hidden; box-shadow: 0 14px 35px rgba(0,0,0,.24); transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease; }
+.video-card:nth-child(4) { grid-column: 2 / span 2; }
+.video-card:nth-child(5) { grid-column: 4 / span 2; }
+.video-card > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease, filter .4s ease; }
+.video-shade { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,.92), rgba(0,0,0,.04) 65%); }
+.play-button { position: absolute; top: 48%; left: 50%; width: 62px; height: 46px; background: var(--red); border-radius: 12px; box-shadow: 0 0 25px rgba(226,26,35,.42); transform: translate(-50%,-50%); transition: transform .3s, box-shadow .3s; }
+.play-button::after { content: ""; position: absolute; top: 50%; left: 53%; border-top: 9px solid transparent; border-bottom: 9px solid transparent; border-left: 15px solid #fff; transform: translate(-50%,-50%); }
+.video-info { position: absolute; right: 0; bottom: 0; left: 0; padding: 20px; }
+.video-info strong, .video-info small { display: block; }
+.video-info strong { font-family: "Montserrat", sans-serif; text-transform: uppercase; font-size: 16px; }
+.video-info small { margin-top: 5px; color: #c9cdd1; text-transform: uppercase; font-size: 11px; }
+.video-card:hover { transform: translateY(-7px); border-color: rgba(226,26,35,.82); box-shadow: 0 20px 45px rgba(0,0,0,.42), 0 0 24px rgba(226,26,35,.13); }
+.video-card:hover > img { transform: scale(1.055); filter: brightness(1.08); }
+.video-card:hover .play-button { transform: translate(-50%,-50%) scale(1.08); box-shadow: 0 0 34px rgba(226,26,35,.62); }
+.works-gallery { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+.gallery-item { position: relative; height: 180px; padding: 0; border: 1px solid rgba(255,255,255,.13); border-radius: 8px; background: #06090c; overflow: hidden; cursor: zoom-in; }
+.gallery-item::after { content: "+"; position: absolute; inset: 0; display: grid; place-items: center; color: #fff; background: rgba(0,0,0,.1); opacity: 0; font-size: 34px; font-weight: 300; transition: opacity .3s, background .3s; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; filter: brightness(.82); transition: transform .55s ease, filter .35s ease; }
+.gallery-item:hover { border-color: rgba(226,26,35,.7); }
+.gallery-item:hover img { transform: scale(1.07); filter: brightness(.98); }
+.gallery-item:hover::after { opacity: 1; background: rgba(226,26,35,.14); }
+.systems-metrics { padding: 0 0 48px; background: #010305; border: 0; }
+.systems-metrics .metric-grid { border: 1px solid rgba(255,255,255,.17); border-radius: 9px; overflow: hidden; background: rgba(5,12,19,.9); }
+.systems-cta { padding: 65px 0; background: linear-gradient(90deg, rgba(0,0,0,.97), rgba(10,24,37,.95)), url("./assets/img/execucao-incendio/foto-obra-05.jpg") center/cover; border-top: 1px solid rgba(226,26,35,.35); }
+.systems-cta .container { display: flex; align-items: center; justify-content: space-between; gap: 45px; }
+.systems-cta h2 { max-width: 770px; margin: 0; font-family: "Montserrat", sans-serif; font-size: clamp(27px, 3.2vw, 44px); line-height: 1.15; text-transform: uppercase; }
+.systems-cta p:not(.overline) { margin: 12px 0 0; color: #c8cdd2; }
+.systems-cta .button { flex: 0 0 auto; min-height: 58px; }
+.lightbox { position: fixed; z-index: 3000; inset: 0; display: grid; place-items: center; padding: 50px; background: rgba(0,0,0,.92); backdrop-filter: blur(8px); }
+.lightbox[hidden] { display: none; }
+.lightbox img { max-width: min(1100px, 92vw); max-height: 84vh; border: 1px solid rgba(255,255,255,.2); border-radius: 8px; box-shadow: 0 25px 80px rgba(0,0,0,.7); }
+.lightbox-close { position: absolute; top: 22px; right: 28px; width: 48px; height: 48px; color: #fff; background: rgba(226,26,35,.9); border: 0; border-radius: 50%; font-size: 31px; line-height: 1; cursor: pointer; }
+
 @media (max-width: 1250px) {
   .container { width: min(calc(100% - 40px), var(--container)); }
   .main-nav { gap: 24px; }
@@ -189,6 +250,12 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
   .phone span { display: none; }
   .about-layout { grid-template-columns: 1fr .86fr 255px; }
   .about-pillars article { padding-inline: 22px; }
+  .works-brand { flex-basis: 200px; }
+  .works-brand img { width: 195px; }
+  .systems-header .main-nav { gap: 20px; }
+  .systems-header .nav-link { font-size: 11px; }
+  .works-header-cta { padding-inline: 15px; }
+  .works-gallery { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 980px) {
@@ -228,6 +295,13 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
   .services-button { justify-self: start; }
   .service-grid { grid-template-columns: 1fr 1fr; }
   .service-card:last-child { grid-column: 1 / -1; }
+  .systems-hero, .systems-hero-inner { min-height: 650px; }
+  .systems-hero-bg { background-position: 58% center; }
+  .systems-hero-copy { width: min(610px, 70%); }
+  .video-grid { grid-template-columns: 1fr 1fr; }
+  .video-card, .video-card:nth-child(4), .video-card:nth-child(5) { grid-column: auto; }
+  .video-card:last-child { grid-column: 1 / -1; }
+  .systems-cta .container { align-items: flex-start; flex-direction: column; }
 }
 
 @media (max-width: 700px) {
@@ -270,6 +344,19 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
   .client-logo img { max-width: 128px; max-height: 52px; }
   .contact-strip .container { display: block; }
   .contact-strip .button { width: 100%; margin-top: 22px; }
+  .systems-hero, .systems-hero-inner { min-height: 720px; }
+  .systems-hero-bg { background-position: 65% center; }
+  .systems-hero-overlay { background: linear-gradient(90deg, rgba(0,0,0,.97), rgba(0,0,0,.62)), linear-gradient(0deg, rgba(0,0,0,.92), transparent 72%); }
+  .systems-hero-copy { width: 100%; padding-top: 60px; }
+  .systems-hero-copy h1 { font-size: clamp(36px, 10vw, 49px); }
+  .systems-benefits { grid-template-columns: 1fr; }
+  .works-section, .gallery-section { padding-block: 50px; }
+  .video-grid { grid-template-columns: 1fr; }
+  .video-card, .video-card:last-child { grid-column: auto; min-height: 260px; }
+  .works-gallery { grid-template-columns: 1fr 1fr; }
+  .gallery-item { height: 170px; }
+  .systems-cta .button { width: 100%; }
+  .lightbox { padding: 20px; }
 }
 
 @media (max-width: 460px) {
@@ -282,6 +369,8 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
   .logo-set { gap: 38px; padding-right: 38px; }
   .client-logo { flex-basis: 112px; }
   .client-logo img { max-width: 112px; max-height: 46px; }
+  .works-gallery { grid-template-columns: 1fr; }
+  .gallery-item { height: 220px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

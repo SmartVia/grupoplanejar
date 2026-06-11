@@ -7,6 +7,7 @@ const logoTrack = document.querySelector(".logo-track");
 const logoSet = document.querySelector(".logo-set");
 const header = document.querySelector(".site-header");
 const heroBackground = document.querySelector(".hero-background");
+const systemsHeroBackground = document.querySelector(".systems-hero-bg");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (logoTrack && logoSet) {
@@ -23,7 +24,12 @@ if (!reduceMotion) {
     document.querySelector(".hero-copy .overline"),
     document.querySelector(".hero-copy h1"),
     document.querySelector(".hero-description"),
-    document.querySelector(".hero-actions")
+    document.querySelector(".hero-actions"),
+    document.querySelector(".systems-hero-copy .overline"),
+    document.querySelector(".systems-hero-copy h1"),
+    document.querySelector(".systems-hero-copy > p:not(.overline)"),
+    document.querySelector(".systems-benefits"),
+    document.querySelector(".systems-hero-copy .hero-actions")
   ].filter(Boolean);
 
   heroElements.forEach((element, index) => {
@@ -41,6 +47,10 @@ if (!reduceMotion) {
     [...document.querySelectorAll(".metric")],
     [...document.querySelectorAll(".solutions-heading > *")],
     [...document.querySelectorAll(".service-card")],
+    [...document.querySelectorAll(".systems-heading")],
+    [...document.querySelectorAll(".video-card")],
+    [...document.querySelectorAll(".gallery-item")],
+    [document.querySelector(".systems-cta .container")],
     [document.querySelector(".trusted")],
     [document.querySelector(".contact-strip .container")]
   ];
@@ -111,6 +121,11 @@ const updateScrollEffects = () => {
     heroBackground.style.setProperty("--parallax-y", `${offset}px`);
   }
 
+  if (!reduceMotion && systemsHeroBackground && window.innerWidth > 700) {
+    const offset = Math.min(scrollY * 0.1, 42);
+    systemsHeroBackground.style.setProperty("--systems-parallax", `${offset}px`);
+  }
+
   scrollFrame = null;
 };
 
@@ -119,6 +134,37 @@ window.addEventListener("scroll", () => {
 }, { passive: true });
 
 updateScrollEffects();
+
+const lightbox = document.querySelector(".lightbox");
+const lightboxImage = lightbox?.querySelector("img");
+const lightboxClose = lightbox?.querySelector(".lightbox-close");
+const galleryItems = document.querySelectorAll("[data-lightbox]");
+
+const closeLightbox = () => {
+  if (!lightbox) return;
+  lightbox.hidden = true;
+  body.classList.remove("lightbox-open");
+  if (lightboxImage) lightboxImage.src = "";
+};
+
+galleryItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (!lightbox || !lightboxImage) return;
+    lightboxImage.src = item.dataset.lightbox;
+    lightboxImage.alt = item.querySelector("img")?.alt || "Foto ampliada de obra";
+    lightbox.hidden = false;
+    body.classList.add("lightbox-open");
+    lightboxClose?.focus();
+  });
+});
+
+lightboxClose?.addEventListener("click", closeLightbox);
+lightbox?.addEventListener("click", (event) => {
+  if (event.target === lightbox) closeLightbox();
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && lightbox && !lightbox.hidden) closeLightbox();
+});
 
 function closeMenu() {
   body.classList.remove("menu-open");

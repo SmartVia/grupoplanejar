@@ -30,3 +30,16 @@ As imagens utilizadas pela nova Home são:
 A imagem corporativa da seção utiliza o arquivo local:
 
 - `assets/img/hero-planejar-premium.png`
+
+## Página Execução de Sistemas Contra Incêndio
+
+Arquivos usados em `execucao-sistemas-contra-incendio.html`:
+
+- `assets/img/execucao-incendio/logo-planejar-obras.png`
+- `assets/img/execucao-incendio/hero-execucao-incendio.png`
+- `assets/img/execucao-incendio/video-obra-femsa.png`
+- `assets/img/execucao-incendio/video-deposito-bebidas.png`
+- `assets/img/execucao-incendio/video-galpao-logistico.png`
+- `assets/img/execucao-incendio/video-documentario-planejar.png`
+- `assets/img/execucao-incendio/video-sao-joao-del-rei.png`
+- `assets/img/execucao-incendio/foto-obra-01.jpg` até `foto-obra-06.jpg`
