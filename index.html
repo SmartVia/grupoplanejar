@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Grupo Planejar: engenharia especializada em prevenção e combate a incêndio, execução de sistemas e construção civil em todo o Brasil.">
-  <meta name="theme-color" content="#041326">
+  <meta name="description" content="Grupo Planejar: soluções completas em prevenção e combate a incêndio, execução de sistemas e construção civil em todo o Brasil.">
+  <meta name="theme-color" content="#030b14">
   <title>Grupo Planejar | Engenharia, Segurança e Construção</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=20260611-red">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -17,224 +17,165 @@
   <header class="site-header" id="inicio">
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="Grupo Planejar - início">
-        <span class="brand-small">GRUPO</span>
-        <span class="brand-name">PLANEJAR</span>
-        <span class="brand-line"></span>
+        <span>GRUPO</span>
+        <strong>PLANEJAR</strong>
       </a>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
         <span></span><span></span><span></span>
       </button>
 
       <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
         <a class="nav-link active" href="#inicio">Home</a>
-        <a class="nav-link" href="#quem-somos">Quem somos</a>
+        <a class="nav-link" href="#quem-somos">Quem Somos</a>
         <div class="nav-dropdown">
           <button class="nav-link dropdown-toggle" type="button" aria-expanded="false">
             Serviços
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5"/></svg>
           </button>
           <div class="dropdown-menu">
-            <a href="#projetos-incendio">Projetos de prevenção e combate a incêndio</a>
-            <a href="#sistemas-incendio">Execução de sistemas contra incêndio</a>
-            <a href="#construcao-civil">Construção civil</a>
+            <a href="projetos-prevencao-combate-incendio.html">Projetos de prevenção e combate a incêndio</a>
+            <a href="execucao-sistemas-contra-incendio.html">Execução de sistemas contra incêndio</a>
+            <a href="construcao-civil.html">Construção civil</a>
           </div>
         </div>
-        <a class="nav-link" href="#obras">Obras e clientes</a>
+        <a class="nav-link" href="#obras-clientes">Obras e Clientes</a>
         <a class="nav-link" href="#contato">Contato</a>
       </nav>
 
-      <div class="header-actions">
-        <a class="phone-link" href="https://wa.me/553730161235?text=Olá%2C%20gostaria%20de%20falar%20com%20o%20Grupo%20Planejar." target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.7A8.5 8.5 0 1 1 20.5 11.8Z"/><path d="M8.2 7.7c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.8 1.9c.1.3 0 .5-.2.7l-.6.7c-.2.2-.2.4-.1.6.5 1 1.3 1.9 2.3 2.4.3.1.5.1.7-.1l.8-1c.2-.2.4-.3.7-.2l1.8.9c.3.1.4.3.4.5 0 .5-.2 1.4-.8 1.9-.5.5-1.3.7-2.2.5-1.3-.3-3.1-1.2-4.6-2.8-1.2-1.3-2.1-3-2.3-4.3-.2-.7 0-1.3.4-1.7.3-.3.7-.5 1.2-.5Z"/></svg>
+      <div class="header-contact">
+        <a class="phone" href="https://wa.me/553730161235?text=Olá,%20vim%20pelo%20site%20do%20Grupo%20Planejar." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.7A8.5 8.5 0 1 1 20.5 11.8Z"/><path d="M8.2 7.7c.3-.5.5-.5.9-.5.3 0 .5 0 .7.5l.8 1.9c.1.3.1.5-.2.8l-.6.7c-.2.2-.2.4-.1.7.5 1 1.4 1.9 2.4 2.4.3.2.5.1.7-.1l.9-1c.2-.2.4-.3.7-.2l1.9.9c.3.1.4.3.4.6 0 .5-.3 1.4-.8 1.9-.6.5-1.4.7-2.3.5-1.4-.3-3.2-1.2-4.8-2.9-1.3-1.3-2.2-3.1-2.4-4.4-.1-.8.1-1.4.5-1.8.4-.4.8-.6 1.3-.6Z"/></svg>
           <span>(37) 3016-1235</span>
         </a>
-        <a class="btn btn-primary btn-header whatsapp-link" href="https://wa.me/553730161235?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener">Solicitar orçamento</a>
+        <a class="button button-red header-button" href="https://wa.me/553730161235?text=Olá,%20vim%20pelo%20site%20do%20Grupo%20Planejar%20e%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener">Solicitar Orçamento</a>
       </div>
     </div>
   </header>
 
   <main id="conteudo">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-media" role="img" aria-label="Técnico em sistema contra incêndio, edifício corporativo e engenheiro projetista"></div>
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Engenharia que transforma e protege</p>
-          <h1 id="hero-title">Engenharia que <span>protege</span>, constrói e entrega resultados.</h1>
-          <p class="hero-text">Projetos de prevenção e combate a incêndio, execução de sistemas e construção civil com atuação em todo o Brasil.</p>
-          <div class="hero-buttons">
-            <a class="btn btn-primary whatsapp-link" href="https://wa.me/553730161235?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.7A8.5 8.5 0 1 1 20.5 11.8Z"/><path d="M8.2 7.7c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.8 1.9c.1.3 0 .5-.2.7l-.6.7c-.2.2-.2.4-.1.6.5 1 1.3 1.9 2.3 2.4.3.1.5.1.7-.1l.8-1c.2-.2.4-.3.7-.2l1.8.9c.3.1.4.3.4.5 0 .5-.2 1.4-.8 1.9-.5.5-1.3.7-2.2.5-1.3-.3-3.1-1.2-4.6-2.8-1.2-1.3-2.1-3-2.3-4.3-.2-.7 0-1.3.4-1.7.3-.3.7-.5 1.2-.5Z"/></svg>
-              Solicitar orçamento
+      <div class="hero-background" role="img" aria-label="Engenheiro do Grupo Planejar diante de edifício corporativo e sistema de tubulações contra incêndio"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="overline">Engenharia que transforma e protege</p>
+          <h1 id="hero-title">Engenharia que<br><span>protege</span>, constrói<br>e entrega<br>resultados.</h1>
+          <p class="hero-description">Soluções completas em prevenção e combate a incêndio, execução de sistemas e construção civil com atuação em todo o Brasil.</p>
+          <div class="hero-actions">
+            <a class="button button-red" href="https://wa.me/553730161235?text=Olá,%20vim%20pelo%20site%20do%20Grupo%20Planejar%20e%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.7A8.5 8.5 0 1 1 20.5 11.8Z"/><path d="M8.2 7.7c.3-.5.5-.5.9-.5.3 0 .5 0 .7.5l.8 1.9c.1.3.1.5-.2.8l-.6.7c-.2.2-.2.4-.1.7.5 1 1.4 1.9 2.4 2.4.3.2.5.1.7-.1l.9-1c.2-.2.4-.3.7-.2l1.9.9c.3.1.4.3.4.6 0 .5-.3 1.4-.8 1.9-.6.5-1.4.7-2.3.5-1.4-.3-3.2-1.2-4.8-2.9-1.3-1.3-2.2-3.1-2.4-4.4-.1-.8.1-1.4.5-1.8.4-.4.8-.6 1.3-.6Z"/></svg>
+              Solicitar Orçamento
             </a>
-            <a class="btn btn-outline whatsapp-link" href="https://wa.me/553730161235?text=Olá%2C%20gostaria%20de%20falar%20com%20um%20especialista." target="_blank" rel="noopener">Falar com um especialista</a>
+            <a class="button button-outline" href="https://wa.me/553730161235?text=Olá,%20vim%20pelo%20site%20do%20Grupo%20Planejar%20e%20gostaria%20de%20falar%20com%20um%20especialista." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.5-4 2.8-6 7-6s6.5 2 7 6"/></svg>
+              Falar com Especialista
+            </a>
           </div>
         </div>
-
-        <div class="stats reveal" aria-label="Indicadores do Grupo Planejar">
-          <article class="stat">
-            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 56h48M14 56V31h14v25M28 56V12h22v44M34 20h4m6 0h-4m-6 9h4m6 0h-4m-20 9h4m-4 8h4m14-8h6m-6 9h6"/></svg>
-            <div><strong>+1.000.000 m²</strong><span>protegidos</span></div>
-          </article>
-          <article class="stat">
-            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6c7 6 15 8 24 9v15c0 14-9 23-24 29C17 53 8 44 8 30V15c9-1 17-3 24-9Z"/><path d="m20 31 8 8 17-17"/></svg>
-            <div><strong>+800</strong><span>AVCBs liberados</span></div>
-          </article>
-          <article class="stat">
-            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M26 8h22v9H26zM37 17v13M15 56H7V44h8c8 0 8-14 8-14h28v26h-8"/><path d="M27 39h16M23 49h20"/></svg>
-            <div><strong>+100.000 m</strong><span>de tubulações instaladas</span></div>
-          </article>
-          <article class="stat">
-            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="m10 18 8-7 8 2 6-7 7 6 10-1 5 9-4 9 5 8-9 4-2 11-10-2-7 8-8-8-10-1-1-11-7-6 6-8Z"/></svg>
-            <div><strong>Atuação</strong><span>nacional</span></div>
-          </article>
-        </div>
       </div>
     </section>
 
-    <section class="section services" id="servicos" aria-labelledby="services-title">
+    <section class="metrics" aria-label="Indicadores do Grupo Planejar">
+      <div class="container metric-grid">
+        <article class="metric">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 5c7 6 15 8 24 10v15c0 14-9 23-24 29C17 53 8 44 8 30V15c9-2 17-4 24-10Z"/></svg>
+          <div><strong>+15</strong><span>Anos de experiência</span></div>
+        </article>
+        <article class="metric">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 57h44M16 57V20h15v37M31 57V8h20v49M21 28h5m-5 9h5m-5 9h5m11-29h8m-8 10h8m-8 10h8m-8 10h8"/></svg>
+          <div><strong>+1.000</strong><span>Projetos executados</span></div>
+        </article>
+        <article class="metric">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="m10 18 8-7 8 2 6-7 7 6 10-1 5 9-4 9 5 8-9 4-2 11-10-2-7 8-8-8-10-1-1-11-7-6 6-8Z"/></svg>
+          <div><span>Atuação</span><strong class="metric-word">Nacional</strong></div>
+        </article>
+        <article class="metric">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M13 38a19 19 0 0 1 38 0M8 38h48v8H8zM18 46c2 8 26 8 28 0M24 19V9h7v10m3 0V9h7v10"/></svg>
+          <div><span>Equipe</span><strong class="metric-word">Especializada</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="solutions" id="servicos" aria-labelledby="solutions-title">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Expertise integrada</p>
-          <h2 id="services-title">Nossas soluções</h2>
-          <p>Do projeto à execução, entregamos soluções completas com responsabilidade técnica, precisão e compromisso com o resultado.</p>
+        <div class="solutions-heading">
+          <div>
+            <p class="overline">Nossas soluções</p>
+            <h2 id="solutions-title">Soluções completas em<br>engenharia e construção</h2>
+          </div>
+          <p class="solutions-intro">Atuamos com excelência em todas as etapas do projeto, garantindo segurança, qualidade e cumprimento de prazos.</p>
+          <a class="button button-outline services-button" href="#service-cards">Ver todos os serviços <span>›</span></a>
         </div>
-        <div class="service-grid">
-          <article class="service-card reveal" id="projetos-incendio">
-            <img src="./assets/img/projetos-incendio.jpg" alt="Engenheiro analisando projeto técnico de prevenção contra incêndio" width="650" height="570">
-            <div class="service-body">
-              <span class="service-number">01</span>
-              <h3>Projetos de prevenção e combate a incêndio</h3>
-              <p>Projetos técnicos completos, compatibilizados e preparados para aprovação junto ao Corpo de Bombeiros.</p>
-              <a href="https://wa.me/553730161235?text=Olá%2C%20quero%20saber%20mais%20sobre%20projetos%20de%20prevenção%20e%20combate%20a%20incêndio." target="_blank" rel="noopener">Saiba mais <span>→</span></a>
+
+        <div class="service-grid" id="service-cards">
+          <article class="service-card">
+            <img src="./assets/img/servico-projetos-incendio.png" alt="Projetos técnicos e componentes de sistema contra incêndio" width="1672" height="941">
+            <div class="card-shade"></div>
+            <div class="service-content">
+              <div class="service-icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M16 42h16M19 42V19h10v23M22 14h4m-2 0V8m-8 11h16M13 8h13c5 0 8 3 8 8v4M34 16h5v8"/></svg>
+              </div>
+              <h3>Projetos de Prevenção e<br>Combate a Incêndio</h3>
+              <p>Elaboração de projetos técnicos completos em conformidade com as normas vigentes.</p>
+              <a href="projetos-prevencao-combate-incendio.html">Saiba mais <span>›</span></a>
             </div>
           </article>
-          <article class="service-card reveal" id="sistemas-incendio">
-            <img src="./assets/img/sistemas-incendio.jpg" alt="Técnico trabalhando em tubulações de sistema contra incêndio" width="650" height="650">
-            <div class="service-body">
-              <span class="service-number">02</span>
-              <h3>Execução de sistemas contra incêndio</h3>
-              <p>Instalação de hidrantes, sprinklers, alarmes, detecção e sinalização com equipes especializadas.</p>
-              <a href="https://wa.me/553730161235?text=Olá%2C%20quero%20saber%20mais%20sobre%20execução%20de%20sistemas%20contra%20incêndio." target="_blank" rel="noopener">Saiba mais <span>→</span></a>
+
+          <article class="service-card">
+            <img src="./assets/img/servico-sistemas-incendio.png" alt="Sistema industrial de tubulações vermelhas contra incêndio" width="1672" height="941">
+            <div class="card-shade"></div>
+            <div class="service-content">
+              <div class="service-icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 12h13v8H8zM27 28h13v8H27zM21 16h8v16M14 20v17h13M10 37h8M34 11v17m-5-17h10M31 7h6v4"/></svg>
+              </div>
+              <h3>Execução de Sistemas<br>Contra Incêndio</h3>
+              <p>Instalação e manutenção de sistemas de combate a incêndio com máxima qualidade.</p>
+              <a href="execucao-sistemas-contra-incendio.html">Saiba mais <span>›</span></a>
             </div>
           </article>
-          <article class="service-card reveal" id="construcao-civil">
-            <img src="./assets/img/construcao-civil.jpg" alt="Edifício corporativo moderno executado com alto padrão" width="650" height="620">
-            <div class="service-body">
-              <span class="service-number">03</span>
-              <h3>Construção civil</h3>
-              <p>Obras residenciais, comerciais e industriais conduzidas com qualidade, planejamento e segurança.</p>
-              <a href="https://wa.me/553730161235?text=Olá%2C%20quero%20saber%20mais%20sobre%20construção%20civil." target="_blank" rel="noopener">Saiba mais <span>→</span></a>
+
+          <article class="service-card">
+            <img src="./assets/img/servico-construcao-civil.png" alt="Estrutura de concreto de uma grande obra em construção" width="1672" height="941">
+            <div class="card-shade"></div>
+            <div class="service-content">
+              <div class="service-icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 42h34M10 42V12h18v30M28 42V22h10v20M15 18h4m4 0h-4m-4 7h4m4 0h-4m-4 7h4m4 0h-4m12-3h5m-5 7h5"/></svg>
+              </div>
+              <h3>Construção Civil</h3>
+              <p>Obras corporativas, industriais e comerciais com foco em qualidade e segurança.</p>
+              <a href="construcao-civil.html">Saiba mais <span>›</span></a>
             </div>
           </article>
         </div>
-      </div>
-    </section>
 
-    <section class="section about" id="quem-somos" aria-labelledby="about-title">
-      <div class="container about-grid">
-        <div class="about-visual reveal">
-          <img src="./assets/img/hero-grupo-planejar.png" alt="Integração entre engenharia contra incêndio e construção civil" width="1792" height="896">
-          <div class="experience-card"><strong>Engenharia</strong><span>com visão completa</span></div>
-        </div>
-        <div class="about-copy reveal">
-          <p class="eyebrow">Grupo Planejar</p>
-          <h2 id="about-title">Segurança técnica para projetos que precisam avançar.</h2>
-          <p>Integramos engenharia de incêndio, execução especializada e construção civil para reduzir riscos, otimizar recursos e garantir previsibilidade em cada etapa.</p>
-          <p>Nossa atuação combina conhecimento normativo, gestão de obra e atenção aos detalhes, sempre com foco na segurança das pessoas e na valorização do patrimônio.</p>
-          <ul class="check-list">
-            <li>Responsabilidade técnica e conformidade normativa</li>
-            <li>Equipe especializada do planejamento à entrega</li>
-            <li>Atendimento consultivo em todo o território nacional</li>
-          </ul>
-          <a class="text-link whatsapp-link" href="https://wa.me/553730161235?text=Olá%2C%20gostaria%20de%20conhecer%20melhor%20o%20Grupo%20Planejar." target="_blank" rel="noopener">Conheça nossa engenharia <span>→</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section pillars" aria-labelledby="pillars-title">
-      <div class="container">
-        <div class="section-heading light reveal">
-          <p class="eyebrow">Por que escolher a Planejar</p>
-          <h2 id="pillars-title">Engenharia apoiada em quatro pilares</h2>
-        </div>
-        <div class="pillar-grid">
-          <article class="pillar reveal"><span>01</span><h3>Precisão técnica</h3><p>Decisões fundamentadas em normas, projetos compatibilizados e execução criteriosa.</p></article>
-          <article class="pillar reveal"><span>02</span><h3>Gestão eficiente</h3><p>Planejamento rigoroso para controlar prazos, custos, equipes e qualidade.</p></article>
-          <article class="pillar reveal"><span>03</span><h3>Segurança integral</h3><p>Proteção de vidas, operações e patrimônios em todas as soluções entregues.</p></article>
-          <article class="pillar reveal"><span>04</span><h3>Alcance nacional</h3><p>Capacidade técnica e operacional para atender projetos em todo o Brasil.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section projects" id="obras" aria-labelledby="projects-title">
-      <div class="container projects-grid">
-        <div class="projects-copy reveal">
-          <p class="eyebrow">Obras e clientes</p>
-          <h2 id="projects-title">Estrutura para desafios de diferentes escalas.</h2>
-          <p>Atuamos em empreendimentos comerciais, industriais, residenciais e institucionais, conectando estratégia, engenharia e execução.</p>
-          <div class="project-tags" aria-label="Segmentos atendidos">
-            <span>Indústrias</span><span>Condomínios</span><span>Edifícios corporativos</span><span>Centros logísticos</span><span>Comércio e serviços</span><span>Instituições</span>
+        <div class="trusted" id="obras-clientes">
+          <p>Empresas que confiam</p>
+          <div class="trusted-logos" aria-label="Clientes atendidos">
+            <strong class="vale"><i></i>VALE</strong>
+            <strong>GERDAU</strong>
+            <strong class="vli">VLI</strong>
+            <strong class="coca">Coca-Cola <small>FEMSA</small></strong>
+            <strong class="andrade">AG <small>ANDRADE GUTIERREZ</small></strong>
+            <strong class="mrv">MRV</strong>
           </div>
         </div>
-        <div class="territory-card reveal">
-          <span class="territory-kicker">Do estudo preliminar à entrega final</span>
-          <strong>Uma parceira para o ciclo completo da sua obra.</strong>
-          <a class="btn btn-primary whatsapp-link" href="https://wa.me/553730161235?text=Olá%2C%20gostaria%20de%20conversar%20sobre%20uma%20obra." target="_blank" rel="noopener">Apresentar meu projeto</a>
-        </div>
       </div>
     </section>
 
-    <section class="contact-cta" id="contato" aria-labelledby="contact-title">
-      <div class="container contact-inner reveal">
-        <div>
-          <p class="eyebrow">Vamos planejar juntos?</p>
-          <h2 id="contact-title">Sua obra começa com uma conversa técnica.</h2>
-          <p>Fale com nossa equipe e receba um atendimento direcionado às necessidades do seu projeto.</p>
-        </div>
-        <a class="btn btn-light whatsapp-link" href="https://wa.me/553730161235?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20iniciar%20uma%20conversa." target="_blank" rel="noopener">
-          Chamar no WhatsApp
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
-        </a>
+    <section class="about-anchor" id="quem-somos" aria-label="Quem somos"></section>
+    <section class="contact-strip" id="contato">
+      <div class="container">
+        <div><span>Grupo Planejar</span><strong>Engenharia para proteger, construir e entregar resultados.</strong></div>
+        <a class="button button-red" href="https://wa.me/553730161235?text=Olá,%20vim%20pelo%20site%20do%20Grupo%20Planejar%20e%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener">Fale com nossa equipe</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand footer-brand" href="#inicio">
-          <span class="brand-small">GRUPO</span>
-          <span class="brand-name">PLANEJAR</span>
-          <span class="brand-line"></span>
-        </a>
-        <p>Engenharia, construção e segurança contra incêndio com atuação nacional.</p>
-      </div>
-      <div>
-        <h3>Navegação</h3>
-        <a href="#inicio">Home</a><a href="#quem-somos">Quem somos</a><a href="#servicos">Serviços</a><a href="#obras">Obras e clientes</a>
-      </div>
-      <div>
-        <h3>Serviços</h3>
-        <a href="#projetos-incendio">Projetos contra incêndio</a><a href="#sistemas-incendio">Execução de sistemas</a><a href="#construcao-civil">Construção civil</a>
-      </div>
-      <div>
-        <h3>Contato</h3>
-        <a href="https://wa.me/553730161235" target="_blank" rel="noopener">(37) 3016-1235</a>
-        <span>Atendimento em todo o Brasil</span>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>© <span id="current-year"></span> Grupo Planejar. Todos os direitos reservados.</p>
-      <a href="#inicio">Voltar ao topo ↑</a>
-    </div>
-  </footer>
-
-  <a class="floating-whatsapp" href="https://wa.me/553730161235?text=Olá%2C%20vim%20pelo%20site%20do%20Grupo%20Planejar." target="_blank" rel="noopener" aria-label="Falar com o Grupo Planejar pelo WhatsApp">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.7A8.5 8.5 0 1 1 20.5 11.8Z"/><path d="M8.2 7.7c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.8 1.9c.1.3 0 .5-.2.7l-.6.7c-.2.2-.2.4-.1.6.5 1 1.3 1.9 2.3 2.4.3.1.5.1.7-.1l.8-1c.2-.2.4-.3.7-.2l1.8.9c.3.1.4.3.4.5 0 .5-.2 1.4-.8 1.9-.5.5-1.3.7-2.2.5-1.3-.3-3.1-1.2-4.6-2.8-1.2-1.3-2.1-3-2.3-4.3-.2-.7 0-1.3.4-1.7.3-.3.7-.5 1.2-.5Z"/></svg>
+  <a class="floating-whatsapp" href="https://wa.me/553730161235?text=Olá,%20vim%20pelo%20site%20do%20Grupo%20Planejar%20e%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.3-4.7A8.5 8.5 0 1 1 20.5 11.8Z"/><path d="M8.2 7.7c.3-.5.5-.5.9-.5.3 0 .5 0 .7.5l.8 1.9c.1.3.1.5-.2.8l-.6.7c-.2.2-.2.4-.1.7.5 1 1.4 1.9 2.4 2.4.3.2.5.1.7-.1l.9-1c.2-.2.4-.3.7-.2l1.9.9c.3.1.4.3.4.6 0 .5-.3 1.4-.8 1.9-.6.5-1.4.7-2.3.5-1.4-.3-3.2-1.2-4.8-2.9-1.3-1.3-2.2-3.1-2.4-4.4-.1-.8.1-1.4.5-1.8.4-.4.8-.6 1.3-.6Z"/></svg>
   </a>
 
-  <script src="script.js"></script>
+  <script src="./script.js?v=20260611-red"></script>
 </body>
 </html>

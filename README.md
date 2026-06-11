@@ -1,29 +1,25 @@
-# Grupo Planejar - Site Institucional
+# Grupo Planejar - Home Premium
 
-Entrega da **Sprint 1**, contendo a Home responsiva do Grupo Planejar.
+Home institucional desenvolvida em HTML, CSS e JavaScript puro.
 
-## Arquivos
+## Arquivos para publicação
 
-- `index.html`: estrutura completa da Home
-- `styles.css`: identidade visual, layout e responsividade
-- `script.js`: menu móvel, navegação, animações e comportamento do cabeçalho
-- `assets/img/`: imagens locais utilizadas no site
+- `index.html`
+- `styles.css`
+- `script.js`
+- `.nojekyll`
+- `projetos-prevencao-combate-incendio.html`
+- `execucao-sistemas-contra-incendio.html`
+- `construcao-civil.html`
+- pasta `assets/img`
 
-## Tecnologias
+## GitHub Pages
 
-HTML5, CSS3 e JavaScript puro. Não há framework, CMS ou etapa de compilação.
+Envie todos os arquivos e pastas mantendo a estrutura original. O `index.html` deve permanecer na raiz do repositório.
 
-## Publicação
+As imagens utilizadas pela nova Home são:
 
-O projeto pode ser publicado diretamente no GitHub Pages ou em qualquer hospedagem estática. O arquivo de entrada é `index.html`.
-
-Todos os caminhos de imagens são relativos à raiz do projeto e compatíveis com a publicação em subdiretórios do GitHub Pages.
-
-## Sprint 1
-
-- Home completa
-- Menu desktop e mobile
-- Submenu de serviços
-- Links de contato e orçamento via WhatsApp
-- Layout responsivo para desktop, tablet e celular
-- Seções de serviços, empresa, diferenciais, obras, contato e rodapé
+- `assets/img/hero-planejar-premium.png`
+- `assets/img/servico-projetos-incendio.png`
+- `assets/img/servico-sistemas-incendio.png`
+- `assets/img/servico-construcao-civil.png`
