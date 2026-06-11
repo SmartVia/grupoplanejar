@@ -7,7 +7,7 @@ Entrega da **Sprint 1**, contendo a Home responsiva do Grupo Planejar.
 - `index.html`: estrutura completa da Home
 - `styles.css`: identidade visual, layout e responsividade
 - `script.js`: menu móvel, navegação, animações e comportamento do cabeçalho
-- `assets/images/`: imagens locais utilizadas no site
+- `assets/img/`: imagens locais utilizadas no site
 
 ## Tecnologias
 
@@ -16,6 +16,8 @@ HTML5, CSS3 e JavaScript puro. Não há framework, CMS ou etapa de compilação.
 ## Publicação
 
 O projeto pode ser publicado diretamente no GitHub Pages ou em qualquer hospedagem estática. O arquivo de entrada é `index.html`.
+
+Todos os caminhos de imagens são relativos à raiz do projeto e compatíveis com a publicação em subdiretórios do GitHub Pages.
 
 ## Sprint 1
 

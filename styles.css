@@ -62,7 +62,7 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
 .menu-toggle span { display: block; width: 24px; height: 2px; margin: 5px auto; background: currentColor; transition: transform .25s, opacity .2s; }
 
 .hero { position: relative; min-height: 760px; padding-top: 98px; color: var(--white); background: var(--navy-950); overflow: hidden; }
-.hero-media { position: absolute; inset: 98px 0 0; background-image: url("assets/images/hero-grupo-planejar.png"); background-size: cover; background-position: center; }
+.hero-media { position: absolute; inset: 98px 0 0; background-image: url("./assets/img/hero-grupo-planejar.png"); background-size: cover; background-position: center; }
 .hero-overlay { position: absolute; inset: 98px 0 0; background: linear-gradient(90deg, rgba(2, 11, 22, .96) 0%, rgba(2, 11, 22, .87) 25%, rgba(2, 11, 22, .3) 54%, rgba(2, 11, 22, .28) 100%), linear-gradient(0deg, rgba(2, 11, 22, .8), transparent 48%); }
 .hero-content { position: relative; min-height: 662px; display: flex; flex-direction: column; justify-content: space-between; padding-top: clamp(85px, 8vw, 130px); }
 .hero-copy { width: min(650px, 49%); }
@@ -112,7 +112,7 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
 .check-list li { position: relative; margin: 13px 0; padding-left: 32px; font-weight: 600; }
 .check-list li::before { content: "✓"; position: absolute; left: 0; top: -1px; width: 21px; height: 21px; display: grid; place-items: center; color: var(--white); background: var(--green); border-radius: 50%; font-size: 12px; }
 
-.pillars { color: var(--white); background: linear-gradient(rgba(2, 11, 22, .94), rgba(2, 11, 22, .94)), url("assets/images/hero-grupo-planejar.png") center/cover fixed; }
+.pillars { color: var(--white); background: linear-gradient(rgba(2, 11, 22, .94), rgba(2, 11, 22, .94)), url("./assets/img/hero-grupo-planejar.png") center/cover fixed; }
 .section-heading.light h2 { color: var(--white); }
 .pillar-grid { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); }
 .pillar { min-height: 260px; padding: 34px; background: rgba(4, 19, 38, .48); }
@@ -125,7 +125,7 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
 .projects-copy > p:not(.eyebrow) { max-width: 680px; color: var(--slate); }
 .project-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
 .project-tags span { padding: 10px 14px; color: var(--navy-800); background: var(--ice); border-left: 3px solid var(--green); font-size: 13px; font-weight: 700; }
-.territory-card { position: relative; display: flex; flex-direction: column; justify-content: flex-end; min-height: 430px; padding: 44px; color: var(--white); background: linear-gradient(0deg, rgba(2, 11, 22, .97), rgba(2, 11, 22, .15)), url("assets/images/construcao-civil.jpg") center/cover; overflow: hidden; }
+.territory-card { position: relative; display: flex; flex-direction: column; justify-content: flex-end; min-height: 430px; padding: 44px; color: var(--white); background: linear-gradient(0deg, rgba(2, 11, 22, .97), rgba(2, 11, 22, .15)), url("./assets/img/construcao-civil.jpg") center/cover; overflow: hidden; }
 .territory-card::before { content: ""; position: absolute; inset: 20px; border: 1px solid rgba(255, 255, 255, .27); pointer-events: none; }
 .territory-kicker { position: relative; color: var(--green); text-transform: uppercase; font-size: 12px; font-weight: 800; letter-spacing: .12em; }
 .territory-card strong { position: relative; max-width: 500px; margin: 9px 0 24px; font-family: "Montserrat", sans-serif; font-size: clamp(25px, 2.3vw, 35px); line-height: 1.2; text-transform: uppercase; }
