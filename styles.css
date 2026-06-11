@@ -101,15 +101,17 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
 .service-card p { max-width: 370px; min-height: 32px; margin: 0 0 9px; color: #c1c6cc; font-size: 11px; line-height: 1.45; }
 .service-card a { width: max-content; color: var(--red); border-bottom: 1px solid var(--red); text-transform: uppercase; font-size: 10px; font-weight: 800; }
 .service-card a span { margin-left: 6px; font-size: 17px; }
-.trusted { padding-top: 9px; }
-.trusted > p { margin: 0 0 8px; color: #8f969f; text-align: center; text-transform: uppercase; font-size: 9px; letter-spacing: .3em; }
-.trusted-logos { display: grid; grid-template-columns: repeat(6, 1fr); align-items: center; gap: 30px; color: #767d86; text-align: center; }
-.trusted-logos strong { font-family: "Montserrat", sans-serif; font-size: 20px; letter-spacing: -.02em; filter: grayscale(1); }
-.trusted-logos small { display: block; font-size: 8px; letter-spacing: .03em; }
-.trusted-logos .vli, .trusted-logos .mrv { font-size: 31px; }
-.trusted-logos .coca { font-family: Georgia, serif; font-style: italic; }
-.trusted-logos .andrade { display: flex; justify-content: center; align-items: center; gap: 5px; }
-.trusted-logos .andrade small { width: 58px; text-align: left; }
+.trusted { margin-top: 24px; padding: 23px 0 6px; border-top: 1px solid var(--line); }
+.trusted-heading { max-width: 780px; margin: 0 auto 25px; text-align: center; }
+.trusted-heading .overline { margin-bottom: 8px; }
+.trusted-heading > p:last-child { margin: 0; color: #9da5ae; font-size: 12px; line-height: 1.6; }
+.logo-carousel { position: relative; width: 100%; overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.logo-track { display: flex; width: max-content; animation: logo-scroll 58s linear infinite; will-change: transform; }
+.logo-set { display: flex; align-items: center; gap: 74px; padding-right: 74px; }
+.client-logo { flex: 0 0 145px; height: 74px; display: flex; align-items: center; justify-content: center; }
+.client-logo img { width: auto; max-width: 145px; height: auto; max-height: 58px; object-fit: contain; opacity: .66; filter: grayscale(1); transition: opacity .25s, filter .25s, transform .25s; }
+.client-logo:hover img { opacity: 1; filter: grayscale(1) brightness(1.2) drop-shadow(0 0 10px rgba(255,255,255,.16)); transform: scale(1.06); }
+@keyframes logo-scroll { to { transform: translateX(-50%); } }
 .about-anchor { height: 1px; background: var(--black); }
 .contact-strip { padding: 35px 0; background: #07121e; border-top: 1px solid var(--line); }
 .contact-strip .container { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
@@ -178,7 +180,9 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
   .service-grid { grid-template-columns: 1fr; }
   .service-card:last-child { grid-column: auto; }
   .service-card, .service-content { min-height: 285px; }
-  .trusted-logos { grid-template-columns: repeat(3, 1fr); gap: 24px 15px; }
+  .logo-set { gap: 52px; padding-right: 52px; }
+  .client-logo { flex-basis: 128px; height: 68px; }
+  .client-logo img { max-width: 128px; max-height: 52px; }
   .contact-strip .container { display: block; }
   .contact-strip .button { width: 100%; margin-top: 22px; }
 }
@@ -188,10 +192,15 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
   .metric + .metric { border-left: 0; border-top: 1px solid var(--line); }
   .metric { min-height: 86px; }
   .metric div { min-width: 0; }
-  .trusted-logos { grid-template-columns: repeat(2, 1fr); }
+  .trusted-heading { text-align: left; }
+  .logo-carousel { margin-inline: -15px; width: calc(100% + 30px); }
+  .logo-set { gap: 38px; padding-right: 38px; }
+  .client-logo { flex-basis: 112px; }
+  .client-logo img { max-width: 112px; max-height: 46px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
+  .logo-track { animation-play-state: paused; }
 }

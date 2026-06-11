@@ -23,3 +23,4 @@ As imagens utilizadas pela nova Home são:
 - `assets/img/servico-projetos-incendio.png`
 - `assets/img/servico-sistemas-incendio.png`
 - `assets/img/servico-construcao-civil.png`
+- `assets/img/clientes/`: 21 logomarcas monocromáticas utilizadas no carrossel

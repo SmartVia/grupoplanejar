@@ -3,6 +3,15 @@ const menuToggle = document.querySelector(".menu-toggle");
 const dropdown = document.querySelector(".nav-dropdown");
 const dropdownToggle = document.querySelector(".dropdown-toggle");
 const navLinks = document.querySelectorAll(".main-nav a");
+const logoTrack = document.querySelector(".logo-track");
+const logoSet = document.querySelector(".logo-set");
+
+if (logoTrack && logoSet) {
+  const clone = logoSet.cloneNode(true);
+  clone.setAttribute("aria-hidden", "true");
+  clone.querySelectorAll("img").forEach((image) => image.setAttribute("alt", ""));
+  logoTrack.appendChild(clone);
+}
 
 function closeMenu() {
   body.classList.remove("menu-open");
