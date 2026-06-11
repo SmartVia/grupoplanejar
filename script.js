@@ -32,6 +32,12 @@ if (!reduceMotion) {
   });
 
   const revealGroups = [
+    [document.querySelector(".about-content")],
+    [...document.querySelectorAll(".story-item")],
+    [document.querySelector(".about-image")],
+    [...document.querySelectorAll(".about-differentials article")],
+    [document.querySelector(".pillars-box")],
+    [...document.querySelectorAll(".about-pillars article")],
     [...document.querySelectorAll(".metric")],
     [...document.querySelectorAll(".solutions-heading > *")],
     [...document.querySelectorAll(".service-card")],

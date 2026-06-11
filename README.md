@@ -24,3 +24,9 @@ As imagens utilizadas pela nova Home são:
 - `assets/img/servico-sistemas-incendio.png`
 - `assets/img/servico-construcao-civil.png`
 - As 21 logomarcas monocromáticas do carrossel ficam diretamente em `assets/img/`
+
+## Seção Sobre Nós
+
+A imagem corporativa da seção utiliza o arquivo local:
+
+- `assets/img/hero-planejar-premium.png`
