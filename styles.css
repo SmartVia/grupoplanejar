@@ -4,6 +4,8 @@
   --navy-light: #071827;
   --red: #e21a23;
   --red-dark: #bd1018;
+  --green: #52b834;
+  --green-dark: #3d9824;
   --white: #fff;
   --muted: #b8bec6;
   --line: rgba(255, 255, 255, .13);
@@ -46,6 +48,8 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
 .button:hover { transform: translateY(-2px); }
 .button-red { background: var(--red); box-shadow: 0 10px 28px rgba(226,26,35,.15); }
 .button-red:hover { background: var(--red-dark); }
+.button-green { background: var(--green); box-shadow: 0 10px 28px rgba(82,184,52,.2); }
+.button-green:hover { background: var(--green-dark); }
 .button-outline { background: rgba(3,13,24,.5); border-color: rgba(255,255,255,.4); }
 .button-outline:hover { border-color: var(--red); }
 .button svg { width: 22px; }
@@ -70,6 +74,8 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
 .metric { min-height: 100px; display: flex; align-items: center; justify-content: center; gap: 22px; padding: 20px 28px; }
 .metric + .metric { border-left: 1px solid var(--line); }
 .metric svg { flex: 0 0 auto; width: 48px; height: 48px; color: var(--red); stroke-width: 1.7; }
+.metric .brazil-map { width: 52px; height: 58px; }
+.metric .brazil-map path { fill: rgba(226, 26, 35, .22); stroke-width: 2.8; }
 .metric div { min-width: 145px; display: flex; flex-direction: column; }
 .metric strong { font-family: "Montserrat", sans-serif; font-size: 29px; line-height: 1.05; }
 .metric span { margin-top: 7px; color: #e1e4e7; text-transform: uppercase; font-size: 11px; }
